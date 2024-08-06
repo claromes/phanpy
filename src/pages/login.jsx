@@ -145,11 +145,7 @@ function Login() {
           </p>
         )}
         <div>
-          <button
-            disabled={
-              uiState === 'loading' || !instanceText || !selectedInstanceText
-            }
-          >
+          <button>
             {selectedInstanceText
               ? `Continue with go.claromes.com`
               : 'Continue'}
