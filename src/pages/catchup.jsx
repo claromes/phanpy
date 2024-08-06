@@ -18,8 +18,6 @@ import { useHotkeys } from 'react-hotkeys-hook';
 import { useSearchParams } from 'react-router-dom';
 import { uid } from 'uid/single';
 
-import catchupUrl from '../assets/features/catch-up.png';
-
 import Avatar from '../components/avatar';
 import Icon from '../components/icon';
 import Link from '../components/link';

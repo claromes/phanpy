@@ -149,7 +149,7 @@ function Settings({ onClose }) {
                         value="light"
                         defaultChecked={currentTheme === 'light'}
                       />
-                      <span>Light</span>
+                      <span>Dracula</span>
                     </label>
                     <label>
                       <input

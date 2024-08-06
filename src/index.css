@@ -14,8 +14,8 @@
   --monospace-font: ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono',
     Menlo, Courier, monospace;
 
-  --blue-color: royalblue;
-  --purple-color: blueviolet;
+  --blue-color: #8BE9FD;
+  --purple-color: #BD93F9;
   --purple-fg-color: color-mix(
     in srgb-linear,
     var(--purple-color) 60%,
@@ -42,13 +42,14 @@
     var(--text-color) 40%
   );
   --red-bg-color: color-mix(in lch, var(--red-color) 40%, transparent);
-  --bg-color: #fff;
-  --bg-faded-color: #f0f2f5;
+  --bg-color: #282A36;
+  --bg-faded-color: #282A36;
   --bg-blur-color: #fff9;
-  --bg-faded-blur-color: #f0f2f599;
-  --text-color: #1c1e21;
-  --text-insignificant-color: #1c1e2199;
+  --bg-faded-blur-color: #44475A;
+  --text-color: #F8F8F2;
+  --text-insignificant-color: #6272A4;
   --link-color: var(--blue-color);
+  --link-color-filter: #6272A4;
   --link-bg-color: #4169e122;
   --link-light-color: #4169e199;
   --link-faded-color: #4169e155;
@@ -61,8 +62,8 @@
   );
   --focus-ring-color: var(--link-color);
   --button-bg-color: var(--blue-color);
-  --button-bg-blur-color: #4169e1aa;
-  --button-text-color: white;
+  --button-bg-blur-color: #6272A4;
+  --button-text-color: #44475A;
   --button-plain-bg-hover-color: rgba(128, 128, 128, 0.1);
   --reblog-color: var(--purple-color);
   --reblog-faded-color: #892be220;
@@ -120,18 +121,18 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --blue-color: CornflowerBlue;
+    --blue-color: #ff853e;
     --purple-color: #b190f1;
     --green-color: lightgreen;
     --orange-color: orange;
     --bg-color: #242526;
     --bg-faded-color: #18191a;
-    --bg-blur-color: #0009;
+    --bg-blur-color: #6272A4;
     --bg-faded-blur-color: #18191a99;
     --text-color: #f0f2f5;
     --text-insignificant-color: #f0f2f599;
-    --link-light-color: #6494ed99;
-    --link-faded-color: #6494ed88;
+    --link-light-color: #ed966499;
+    --link-faded-color: #ed966488;
     --link-bg-hover-color: #34353799;
     --link-visited-color: color-mix(
       in lch,
@@ -189,7 +190,7 @@ body {
 a {
   color: var(--link-color);
   text-decoration-color: var(--link-faded-color);
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   text-underline-offset: 2px;
   overflow-wrap: anywhere;
 }
@@ -257,12 +258,12 @@ button[hidden] {
 
 :is(button, .button).plain {
   background-color: transparent;
-  color: var(--link-color);
+  color: var(--link-color-filter);
   backdrop-filter: blur(12px);
 }
 :is(button, .button).plain2 {
   background-color: transparent;
-  color: var(--link-color);
+  color: var(--link-color-filter);
   backdrop-filter: blur(12px) invert(0.1);
 }
 :is(button, .button).plain3 {
@@ -279,7 +280,7 @@ button[hidden] {
 }
 :is(button, .button).plain5 {
   background-color: transparent;
-  color: var(--link-color);
+  color: var(--link-color-filter);
   text-decoration: underline;
   text-decoration-color: var(--link-faded-color);
 }
