@@ -114,6 +114,7 @@ export default defineConfig({
     }),
   ],
   build: {
+    outDir: 'docs',
     sourcemap: true,
     cssCodeSplit: false,
     rollupOptions: {
