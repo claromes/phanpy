@@ -11,7 +11,7 @@ export async function registerApplication({ instanceURL }) {
     website: WEBSITE,
   });
   const registrationResponse = await fetch(
-    `https://${instanceURL}/api/v1/apps`,
+    `https://go.claromes.com/api/v1/apps`,
     {
       method: 'POST',
       headers: {
@@ -33,7 +33,7 @@ export async function getAuthorizationURL({ instanceURL, client_id }) {
     // redirect_uri: 'urn:ietf:wg:oauth:2.0:oob',
     response_type: 'code',
   });
-  const authorizationURL = `https://${instanceURL}/oauth/authorize?${authorizationParams.toString()}`;
+  const authorizationURL = `https://go.claromes.com/oauth/authorize?${authorizationParams.toString()}`;
   return authorizationURL;
 }
 
@@ -51,7 +51,7 @@ export async function getAccessToken({
     code,
     scope: SCOPES,
   });
-  const tokenResponse = await fetch(`https://${instanceURL}/oauth/token`, {
+  const tokenResponse = await fetch(`https://go.claromes.com/oauth/token`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',

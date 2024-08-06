@@ -4,7 +4,7 @@ import Fuse from 'fuse.js';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { useSearchParams } from 'react-router-dom';
 
-import logo from '../assets/logo.svg';
+import logo from '../assets/mascot-2.png';
 
 import Link from '../components/link';
 import Loader from '../components/loader';
@@ -135,55 +135,10 @@ function Login() {
     <main id="login" style={{ textAlign: 'center' }}>
       <form onSubmit={onSubmit}>
         <h1>
-          <img src={logo} alt="" width="80" height="80" />
+          <img src={logo} alt="" width="80" />
           <br />
           Log in
         </h1>
-        <label>
-          <p>Instance</p>
-          <input
-            value={instanceText}
-            required
-            type="text"
-            class="large"
-            id="instanceURL"
-            ref={instanceURLRef}
-            disabled={uiState === 'loading'}
-            // list="instances-list"
-            autocorrect="off"
-            autocapitalize="off"
-            autocomplete="off"
-            spellCheck={false}
-            placeholder="instance domain"
-            onInput={(e) => {
-              setInstanceText(e.target.value);
-            }}
-          />
-          {instancesSuggestions?.length > 0 ? (
-            <ul id="instances-suggestions">
-              {instancesSuggestions.map((instance, i) => (
-                <li>
-                  <button
-                    type="button"
-                    class="plain5"
-                    onClick={() => {
-                      submitInstance(instance);
-                    }}
-                  >
-                    {instance}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <div id="instances-eg">e.g. &ldquo;mastodon.social&rdquo;</div>
-          )}
-          {/* <datalist id="instances-list">
-            {instancesList.map((instance) => (
-              <option value={instance} />
-            ))}
-          </datalist> */}
-        </label>
         {uiState === 'error' && (
           <p class="error">
             Failed to log in. Please try again or another instance.
@@ -196,19 +151,12 @@ function Login() {
             }
           >
             {selectedInstanceText
-              ? `Continue with ${selectedInstanceText}`
+              ? `Continue with go.claromes.com`
               : 'Continue'}
           </button>{' '}
         </div>
         <Loader hidden={uiState !== 'loading'} />
         <hr />
-        {!DEFAULT_INSTANCE && (
-          <p>
-            <a href="https://joinmastodon.org/servers" target="_blank">
-              Don't have an account? Create one!
-            </a>
-          </p>
-        )}
         <p>
           <Link to="/">Go home</Link>
         </p>
