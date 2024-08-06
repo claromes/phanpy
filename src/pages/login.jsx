@@ -100,13 +100,7 @@ function Login() {
         ?.map((match) => match.item)
     : [];
 
-  const selectedInstanceText = instanceTextLooksLikeDomain
-    ? cleanInstanceText
-    : instancesSuggestions?.length
-    ? instancesSuggestions[0]
-    : instanceText
-    ? instancesList.find((instance) => instance.includes(instanceText))
-    : null;
+  const selectedInstanceText = 'go.claromes.com';
 
   const onSubmit = (e) => {
     e.preventDefault();
