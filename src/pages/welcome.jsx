@@ -57,7 +57,7 @@ function Welcome() {
             </small>
             <br />
             <small>
-              Avatar by david revoy, based on the sloth logo by Anna Abramek for
+              Avatar by David Revoy, based on the sloth logo by Anna Abramek for
               GoToSocial.org
             </small>
           </p>
@@ -65,17 +65,6 @@ function Welcome() {
         <p>
           <a href="https://github.com/cheeaun/phanpy" target="_blank">
             Built with Phanpy
-          </a>{' '}
-          by{' '}
-          <a
-            href="https://go.claromes.com/@claromes"
-            target="_blank"
-            onClick={(e) => {
-              e.preventDefault();
-              states.showAccount = 'claromes@go.claromes.com';
-            }}
-          >
-            @claromes
           </a>
           .{' '}
           <a href={PRIVACY_POLICY_URL} target="_blank">

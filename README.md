@@ -31,7 +31,7 @@ Everything is designed and engineered following my taste and vision. This is a p
 
 - 👪 Multiple accounts
 - 🪟 Compose window pop-out/in
-- 🌗 Dracula/dark/auto theme
+- 🌗 Light/Dracula/auto theme
 - 🔔 Grouped notifications
 - 🪺 Nested comments thread
 - 📬 Unsent draft recovery

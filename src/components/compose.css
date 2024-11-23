@@ -1,11 +1,12 @@
 #compose-container-outer {
+  display: flex;
   width: 100%;
-  height: 100vh;
   height: 100dvh;
   overflow: auto;
   align-self: flex-start;
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
+  background-color: rgba(40,42,54,0.9);
 }
 #compose-container {
   margin: auto;
@@ -115,7 +116,7 @@
   --form-padding-block: 0;
   /* border-radius: 16px; */
   padding: var(--form-padding-block) var(--form-padding-inline);
-  background-color: var(--bg-blur-color);
+  background-color: var(--bg-faded-blur-color);
   /* background-image: linear-gradient(var(--bg-color) 85%, transparent); */
   position: relative;
   z-index: 2;
@@ -171,7 +172,7 @@
   display: inline-block;
   color: var(--link-color);
   background-color: transparent;
-  padding: 0 8px;
+  padding: 2px 5px;
   border-radius: 8px;
   min-height: 2.4em;
   line-height: 2.4em;
@@ -180,7 +181,6 @@
   overflow: hidden;
   position: relative;
   white-space: nowrap;
-  border: 2px solid transparent;
   vertical-align: middle;
 }
 #compose-container .toolbar-button > * {
@@ -208,7 +208,6 @@
   left: -100vw !important;
 }
 #compose-container .toolbar-button select {
-  background-color: transparent;
   border: 0;
   padding: 0 0 0 8px;
   margin: 0;
@@ -247,6 +246,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 100%;
+  padding: 2px 10px 0px 10px;
 }
 
 #compose-container text-expander {

@@ -160,6 +160,7 @@ a[href^='http'][rel*='nofollow']:visited:not(:has(div)) {
   grid-template-columns: 1fr minmax(0, max-content) 1fr;
   align-items: center;
   white-space: nowrap;
+  margin-bottom: 20px;
 }
 .deck > header .header-grid > .header-side:last-of-type {
   text-align: right;
@@ -1113,15 +1114,6 @@ a[href^='http'][rel*='nofollow']:visited:not(:has(div)) {
   padding: 6px;
 }
 
-.status-carousel.boosts-carousel .timeline-item-carousel-group {
-  flex-direction: column;
-  gap: 8px;
-
-  &:before {
-    content: '';
-  }
-}
-
 .ui-state {
   padding: 16px;
   text-align: center;
@@ -1578,16 +1570,16 @@ body:has(.media-modal-container + .status-deck) .media-post-link {
 #compose-button {
   position: fixed;
   bottom: 16px;
-  bottom: max(16px, env(safe-area-inset-bottom));
+  bottom: max(40px, env(safe-area-inset-bottom));
   right: 16px;
-  right: max(16px, env(safe-area-inset-right));
+  right: max(80px, env(safe-area-inset-right));
   padding: 16px;
-  background-color: var(--button-bg-blur-color);
+  background-color: #FF79C6;
   /* backdrop-filter: blur(16px); */
   z-index: 10;
   box-shadow: 0 3px 8px -1px var(--drop-shadow-color),
-    0 10px 36px -4px var(--button-bg-blur-color);
-  transition: all 0.3s ease-in-out;
+    0 10px 36px -4px #bd93f9aa;
+  transition: all 0.2s ease-in-out;
 }
 .deck-container:has(header[hidden]) ~ #compose-button:not(.loading),
 #compose-button[hidden]:not(.loading) {
@@ -1597,13 +1589,13 @@ body:has(.media-modal-container + .status-deck) .media-post-link {
   opacity: 0;
 }
 #compose-button .icon {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 #compose-button[hidden] .icon {
   transform: rotate3d(0, 0, 1, -25deg);
 }
 #compose-button:is(:hover, :focus) {
-  background-color: var(--button-bg-color);
+  background-color: #FF79C6aa;
   filter: none;
 }
 #compose-button:active {
@@ -1611,7 +1603,7 @@ body:has(.media-modal-container + .status-deck) .media-post-link {
   transition: none;
 }
 #compose-button .icon {
-  filter: drop-shadow(0 1px 2px var(--link-color-filter));
+  filter: drop-shadow(0 1px 2px #BD93F9);
 }
 @media (max-width: calc(40em - 1px)) {
   #app[data-shortcuts-view-mode='tab-menu-bar'] #compose-button {
@@ -2138,13 +2130,13 @@ body > .szh-menu-container {
   meter {
     appearance: none;
     position: relative;
-    --border-width: 2px;
+    --border-width: 11px;
     --middle-circle-radius: calc(var(--dimension) / 2 - var(--border-width));
     width: var(--dimension);
     height: var(--dimension);
     border-radius: 50%;
     --fill: calc(var(--percentage) * 1%);
-    --color: var(--link-color);
+    --color: #F1FA8C;
     --middle-circle: radial-gradient(
       circle at 50% 50%,
       var(--bg-color) var(--middle-circle-radius),
@@ -2419,7 +2411,7 @@ ul.link-list li a .icon {
   display: flex;
   width: 100vw;
   overflow-y: hidden;
-  overflow-x: auto;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   /* scrollbar-width: none; */

@@ -489,7 +489,7 @@
 .status > .container > .meta a.time:is(:hover, :focus) {
   .more {
     transform: scale(1.2);
-    color: var(--link-color);
+    color: var(--link-alt-color);
   }
 }
 .status > .container > .meta a.time:active,

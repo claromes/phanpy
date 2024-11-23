@@ -11,9 +11,10 @@
   background-color: var(--backdrop-color);
   animation: appear 0.5s var(--timing-function) both;
   transition: all 0.5s var(--timing-function);
+  opacity: 0.5;
 
   &.solid {
-    background-color: var(--backdrop-solid-color);
+    background-color: var(--backdrop-solid-alt-color);
   }
 
   --compose-button-dimension: 56px;
