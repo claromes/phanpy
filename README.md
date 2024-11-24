@@ -1,7 +1,7 @@
 <div align="center">
   <img src="src/assets/mascot-1.png" width="128" height="128" alt="">
 
-Phanpy - Go Claromes Web Client
+Go Claromes Web Client (Phanpy)
 ===
 </div>
 
