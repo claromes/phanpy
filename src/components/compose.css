@@ -6,7 +6,7 @@
   align-self: flex-start;
   padding: env(safe-area-inset-top) env(safe-area-inset-right)
     env(safe-area-inset-bottom) env(safe-area-inset-left);
-  background-color: rgba(40,42,54,0.9);
+  background-color: rgba(40,42,54,0.96);
 }
 #compose-container {
   margin: auto;
