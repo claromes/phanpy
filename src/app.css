@@ -1572,7 +1572,7 @@ body:has(.media-modal-container + .status-deck) .media-post-link {
   bottom: 16px;
   bottom: max(40px, env(safe-area-inset-bottom));
   right: 16px;
-  right: max(80px, env(safe-area-inset-right));
+  right: max(50px, env(safe-area-inset-right));
   padding: 16px;
   background-color: #FF79C6;
   /* backdrop-filter: blur(16px); */

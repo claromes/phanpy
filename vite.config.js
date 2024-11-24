@@ -78,9 +78,8 @@ export default defineConfig({
       manifest: {
         name: CLIENT_NAME,
         short_name: CLIENT_NAME,
-        description: 'Minimalistic opinionated Mastodon web client',
-        // https://github.com/cheeaun/phanpy/issues/231
-        // theme_color: '#ffffff',
+        description:
+          'A minimalistic and opinionated GoToSocial web client, forked from Phanpy',
         icons: [
           {
             src: 'logo-192.png',
