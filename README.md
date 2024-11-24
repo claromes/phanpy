@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/assets/mascot-1.png" width="128" height="128" alt="">
+  <img src="src/assets/mascot-1.png" width="128" height="128" alt="Avatar">
 
 Go Claromes Web Client (Phanpy)
 ===
@@ -8,6 +8,13 @@ Go Claromes Web Client (Phanpy)
 A minimalistic and opinionated GoToSocial web client, forked from [Phanpy](https://github.com/cheeaun/phanpy) and styled with the [Dracula](https://github.com/dracula/dracula-theme) theme.
 
 *Avatar by David Revoy, based on the sloth logo by Anna Abramek for GoToSocial.org.*
+
+<img src="./readme_assets/login.jpg" alt="Login">
+
+<img src="./readme_assets/timeline.jpg" alt="Timeline">
+
+<img src="./readme_assets/post.jpg" alt="Post">
+
 
 ## Development
 
@@ -101,11 +108,7 @@ Available variables:
   - If provided, a setting will appear for users to enable the GIF picker in the composer. Disabled by default.
   - This is not self-hosted.
 
-### Static site hosting
-
-Try online search for "how to self-host static sites" as there are many ways to do it.
-
-#### Lingva-translate or lingva-api hosting
+### Lingva-translate or lingva-api hosting
 
 See documentation for [lingva-translate](https://github.com/thedaviddelta/lingva-translate) or [lingva-api](https://github.com/cheeaun/lingva-api).
 
