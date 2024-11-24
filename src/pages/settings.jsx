@@ -3,7 +3,7 @@ import './settings.css';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { useSnapshot } from 'valtio';
 
-import logo from '../assets/logo.svg';
+import logo from '../assets/mascot-1.png';
 
 import Icon from '../components/icon';
 import Link from '../components/link';
@@ -609,24 +609,10 @@ function Settings({ onClose }) {
               style={{
                 aspectRatio: '1/1',
                 verticalAlign: 'middle',
-                background: '#b7cdf9',
                 borderRadius: 12,
               }}
             />
             <div>
-              <b>Phanpy</b>{' '}
-              <a
-                href="https://hachyderm.io/@phanpy"
-                // target="_blank"
-                rel="noopener noreferrer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  states.showAccount = 'phanpy@hachyderm.io';
-                }}
-              >
-                @phanpy
-              </a>
-              <br />
               <a
                 href="https://github.com/cheeaun/phanpy"
                 target="_blank"
@@ -644,27 +630,23 @@ function Settings({ onClose }) {
                   states.showAccount = 'cheeaun@mastodon.social';
                 }}
               >
-                @cheeaun
+                @cheeaun{' '}
+              </a>
+              and customized by{' '}
+              <a
+                href="https://go.claromes.com/@claromes"
+                // target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  states.showAccount = 'claromes@go.claromes.com';
+                }}
+              >
+                @claromes
               </a>
             </div>
           </div>
           <p>
-            <a
-              href="https://github.com/sponsors/cheeaun"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Sponsor
-            </a>{' '}
-            &middot;{' '}
-            <a
-              href="https://www.buymeacoffee.com/cheeaun"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Donate
-            </a>{' '}
-            &middot;{' '}
             <a
               href={PRIVACY_POLICY_URL}
               target="_blank"
